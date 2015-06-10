@@ -107,7 +107,8 @@ func main() {
 	// fmt.Println("Starting")
 	seedURLs := []string{}
 	seedURLs = append(seedURLs,
-		"http://www.trademe.co.nz/Browse/CategoryAttributeSearchResults.aspx?search=1&cid=5748&sidebar=1&rptpath=350-5748-4233-&132=FLAT&selected135=7&134=1&135=7&216=0&216=0&217=0&217=0&153=&122=0&122=0&59=20000&59=40000&178=0&178=0&sidebarSearch_keypresses=0&sidebarSearch_suggested=0")
+		"http://www.trademe.co.nz/Browse/CategoryAttributeSearchResults.aspx?search=1&cid=5748&sidebar=1&rptpath=350-5748-4233-&132=FLAT&selected135=7&134=1&135=7&216=0&216=0&217=0&217=0&153=&122=0&122=0&59=20000&59=40000&178=0&178=0&sidebarSearch_keypresses=0&sidebarSearch_suggested=0",
+"http://www.trademe.co.nz/browse/categoryattributesearchresults.aspx?134=1&135=5&136=&153=&132=FLAT&59=20000&59=40000&122=0&122=0&29=&123=0&123=0&search=1&sidebar=1&cid=5748&rptpath=350-5748-")
 	propertyURLs := make(chan *url.URL)
 	err := loadPropertyFromSeedURLs(seedURLs, propertyURLs)
 	if err != nil {
